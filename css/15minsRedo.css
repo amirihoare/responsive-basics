@@ -1,0 +1,127 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/******************************************
+/* BASE STYLES
+*******************************************/
+body {
+    background-color: rgba(34, 34, 34, 1);
+    font-family: "roboto condensed", sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+*******************************************/
+header {
+    background-color: rgb(63, 63, 63);
+    border: 2px solid rgba(255, 255, 255, 0.75);
+    border-radius: 0.75rem;
+    clear: both;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drink-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+header img {
+    display: block;
+    max-width: 250px; /* Set a specific size for the drink image */
+    height: auto;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: rgb(63, 63, 63);
+    border: 2px solid rgba(255, 255, 255, 0.75);
+    border-radius: 0.75rem;
+    clear: both;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+
+    min-height: 125px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transition: all 0.3s ease-in-out; */
+}
+
+footer img {
+    display: block;
+    max-width: 100%;
+    height: 500px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+section {
+    height: 400px;
+    width: 33.333%;
+    float: left;
+    border: 2px solid rgba(255, 255, 255, 0.75);
+    border-radius: 0.75rem;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+.hidden {
+    display: none;
+}
+/* .drink-hidden {
+    display: none;
+} */
+
+/******************************************
+/* RESPONSIVE STYLES
+*******************************************/
+
+/* Mobile-first approach */
+@media screen and (min-width: 50px) and (max-width: 600px){
+    .one, .two, .three {
+        float: none;
+        width: 100%;
+    }
+
+    .one  { background-color: rgb(153, 0, 255); }
+    .two  { background-color: rgb(173, 50, 255); }
+    .three{ background-color: rgb(198, 111, 255); }
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+    .three{ background-color: rgb(198, 111, 255); }
+}
+
+
+/* Tablet styles */
+@media all and (min-width: 601px) and (max-width: 1024px){
+    section {
+        background-color: rgb(84, 50, 255);
+    }
+}
+
+/* Desktop styles */
+@media all and (min-width: 1025px) {
+    section {
+        background-color: rgb(255, 52, 163);
+    }
+}

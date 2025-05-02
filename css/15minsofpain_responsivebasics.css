@@ -1,0 +1,73 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    background-color: rgba(34, 34, 34, 1);
+    font-family: "roboto condensed", sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header, footer{
+    height: 100px;
+    background-color: rgb(63, 63, 63);
+    border: 2px solid rgba(255, 255, 255, 0.75);
+    border-radius: 0.75rem;
+    clear: both;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+section{
+    height: 300px;
+    width: 33.333%;
+    float: left;
+    border: 2px solid rgba(255, 255, 255, 0.75);
+    border-radius: 0.75rem;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* Mobile-first approach */
+@media screen and (min-width: 400px) and (max-width: 600px){
+    .one{
+        background-color: rgb(153, 0, 255);
+        float: none;
+        width: 100%;
+    }
+    .two{
+        background-color: rgb(173, 50, 255);
+        float: none;
+        width: 100%;
+    }
+    .three{
+        background-color: rgb(198, 111, 255);
+        float: none;
+        width: 100%;
+    }
+    
+}
+/* Tablet styles */
+@media all and (min-width: 601px) and (max-width: 1024px){
+    section{
+        background-color: rgb(84, 50, 255);
+    }
+}
+/* Desktop styles */
+@media all and (min-width: 1025px) {
+    section{
+        background-color: rgb(255, 52, 163);
+    }
+}
