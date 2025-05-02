@@ -1,7 +1,7 @@
 ### Front-End Skills Showcase
 This project demonstrates my progress and competency in front-end web development fundamentals.
 
-##Skills Demonstrated
+## Skills Demonstrated
 **HTML**
 
 - Semantic HTML5 structure
